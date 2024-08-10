@@ -25,3 +25,11 @@ console.log(stringNumber);
 console.log(typeof stringNumber);
 
 
+// convert in bigint
+
+let someValue = 32
+let InBigint = BigInt(someValue)
+
+console.log(InBigint);
+console.log(typeof InBigint);
+
