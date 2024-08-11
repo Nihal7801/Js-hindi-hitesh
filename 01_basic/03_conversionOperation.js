@@ -67,6 +67,12 @@ console.log(+"");
 let gameCounter = 100
 let newValue = ++gameCounter;
 console.log(newValue);
+let newValue1 = gameCounter++;
+console.log(newValue1 , gameCounter);
+
+
+
+
 
 
 
