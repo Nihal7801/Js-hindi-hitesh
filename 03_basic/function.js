@@ -37,3 +37,37 @@ function  loginUserMessage(username = 'jimmy'){ //username = 'jimmy'(if we not d
     return`${username} just loged in`
 }
 console.log(loginUserMessage("Nihal Singh"))
+
+
+// Shoping cart function
+
+function calulateCarPrice(val1 , val2 , ...num1){ // "..." this three dot called rest/spred operator.
+    return num1
+}
+console.log(calulateCarPrice(200,900,1000,230,320,450))
+
+// object in function
+
+const user={
+    username:"Nihal Singh",
+    price : 900
+}
+
+function handleObject(anyObject) {
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+// handleObject(user)
+handleObject({
+    username:"jimmy",
+    price:1900
+})
+
+
+// ***************** FUNCTION WITH ARRAY *******************
+const myNewArray = [200,300,400]
+function myNewArrayFunction(getArray){
+    return getArray[1]
+}
+// console.log(myNewArrayFunction(myNewArray))
+console.log(myNewArrayFunction([300,500,1400,3200]))
