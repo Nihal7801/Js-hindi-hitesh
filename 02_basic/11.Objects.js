@@ -28,7 +28,7 @@ const JsUser={
 
 
 JsUser.age = 20
-// console.log(typeof JsUser.age);
+console.log(typeof JsUser.age);
 // console.log(typeof JsUser.lastLoginDays);
 
 
