@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: brown; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(languageName){ //ek function bnaya
+       const li = document.createElement('li'); //esme li ke andar element create kiya aur const li me store kiy
+       li.innerHTML = `${languageName}`// li ke innerHTML ko acces kiya aur languageName ki value rakh di
+       document.querySelector('.language').appendChild(li) // queryselector ka use krke ul ke language class ko acces kiya , aur appendchild ko use krke uske andar ke li ko acess kiya 
+    }
+    addlanguage("python") // function ke parameter me value ko pass kiya
+    addlanguage("typeScript")
+
+    // Another method to how to show element in document
+
+    function addOptlanguage(languageName) {
+        const headElement = document.createElement('h1');
+        headElement.appendChild(document.createTextNode(languageName));
+        document.querySelector('.language').appendChild(headElement)
+    }
+    addOptlanguage("Chai aur code")
+
+    // how to EDIT value
+
+    const secondEdit = document.querySelector("li:nth-child(2)")
+    // secondEdit.innerHTML = "nihal"
+    const newli = document.createElement('li')
+    newli.textContent = "nihalsingh"
+    secondEdit.replaceWith(newli)
+
+    // REMOVE element
+    const removeElem = document.querySelector('h1')
+    removeElem.remove()
+    
+
+
+</script>
+</html>

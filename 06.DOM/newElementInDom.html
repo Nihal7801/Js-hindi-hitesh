@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Element in DOM</title>
+</head>
+<body style="background-color: black;color: white; font-size: 30px;">
+    <div class="parent">
+        <div class="Day">Monday</div>
+        <div class="Day">Tuesday</div>
+        <div class="Day">Wednesday</div>
+        <div class="Day">Thrusday</div>
+        <div class="Day">Friday</div>
+
+    </div>
+</body>
+<script>
+    const myquary1 = document.querySelector('.parent')
+    // console.log(myquary1);
+    // console.log(myquary1.children);
+    // console.log(myquary1.children[1].innerHTML);
+
+    // basic loop like for will use with htmlCollection
+    // for (let i = 0;i < myquary1.children.length ; i++) {
+    //      console.log(myquary1.children[i].innerHTML);
+    // }
+//     myquary1.children[2].style.color = 'orange'
+//    console.log(myquary1.firstElementChild.innerHTML)
+    
+// console.log(myquary1.lastElementChild);
+
+    const dayOne = document.querySelector('.Day')
+    // console.log(dayOne);
+    // console.log(dayOne.parentElement);
+    // console.log(dayOne.nextElementSibling);
+
+    console.log("NODES:",myquary1.childNodes);
+    
+    
+    
+    
+</script>
+</html>
